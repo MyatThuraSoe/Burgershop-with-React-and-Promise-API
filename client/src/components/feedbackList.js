@@ -36,8 +36,8 @@ const feedbackList = [
     },
     {
         id: 6,
-        name: "Leo",
-        img: "eaterMan.jpg",
+        name: "Chris",
+        img: "chris.jpg",
         review: "Food with good quailty, greate taste and fair prices. It's amazing! Food with good quailty, greate taste and fair prices. It's amazing! Food with good quailty, greate taste and fair prices. It's amazing! Food with good quailty, greate taste and fair prices. It's amazing! Food with good quailty, greate taste and fair prices. It's amazing!",
         stars: "5"
     },

@@ -4,7 +4,7 @@ import { StateContext } from "./Order.js";
 
 export function OrderItem(props) {
     const context = useContext(StateContext);
-    const Image = require(`./../assets/img/${props.img}`).default;
+    const Image = require(`./../assets/img/${props.img}`);
 
     
     const AddOrRemoveButton = ()=>{

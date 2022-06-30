@@ -1,16 +1,15 @@
 import React from "react";
-import Canvas from '../assets/img/beefBurger.jpg';
-import Burger1 from '../assets/img/burger1.jpg';
+
 import Burger2 from '../assets/img/burger2.jpg';
 import Burger3 from '../assets/img/burger3.jpg';
 export function About() {
     return(
         <div className="about">
             <div className="left">
-                <ul class="honeycomb">
-                    <li class="honeycomb-cell">
-                        <img class="honeycomb-cell_img" src={Burger3}/>
-                        <div class="honeycomb-cell_title"></div>
+                <ul className="honeycomb">
+                    <li className="honeycomb-cell">
+                        <img className="honeycomb-cell_img" alt='hexagon' src={Burger3}/>
+                        <div className="honeycomb-cell_title"></div>
                     </li>
                 </ul>
             </div>
@@ -23,10 +22,10 @@ export function About() {
             </div>
 
             <div className="right">
-                <ul class="honeycomb">
-                    <li class="honeycomb-cell">
-                        <img class="honeycomb-cell_img" src={Burger2}/>
-                        <div class="honeycomb-cell_title"></div>
+                <ul className="honeycomb">
+                    <li className="honeycomb-cell">
+                        <img className="honeycomb-cell_img" alt='hexagon' src={Burger2}/>
+                        <div className="honeycomb-cell_title"></div>
                     </li>
                 </ul>
             </div>

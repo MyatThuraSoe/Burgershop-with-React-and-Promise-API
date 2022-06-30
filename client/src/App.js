@@ -8,7 +8,7 @@ import { Home } from "./components/Home.js";
 import { Menu } from "./components/Menu.js";
 import { About } from "./components/about.js";
 import { FeedbackPage } from './components/feedbackPage.js';
-import { Contact } from './components/Contact.js';
+import { Contact } from './components/contact.js';
 import { Footer } from "./components/footer.js";
 import { ErrorPage } from "./components/ErrorPage.js";
 import { Order } from "./components/Order.js"; 
@@ -28,7 +28,7 @@ function FirstPage(){
 }
 function App(){
   
-  axios.get(`http://localhost:5000/session`)
+  axios.get(`https://glorytaste.herokuapp.com/session`)
       .then(res => {
         console.log('session id is ', res.data);
       });

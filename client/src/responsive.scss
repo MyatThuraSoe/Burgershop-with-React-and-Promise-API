@@ -369,9 +369,9 @@
                 // }
                 height: 20vh;
                 .itemTextContainer {
-
+                    margin-top: 1vh;
                     .itemName {
-                        font-size: 1.2rem;
+                        font-size: 1.05rem;
                     }
 
                     .itemDetails {
@@ -380,6 +380,8 @@
 
                     .itemPrice {
                         font-size: 1.1rem;
+                        bottom: 0vh;
+                        background-color: inherit;
                     }
                 }
             }
@@ -512,7 +514,7 @@
         }
 
         .cart-container {
-            top: 7.2vh;
+            top: 7.35vh;
             .cart {
                 width: 100%;
                 justify-content: space-between;
@@ -616,7 +618,7 @@
             .honeycomb-cell {
                 flex: 0 1 150px;
                 max-width: 150px;
-                height: 50px;
+                height: 40px;
             }
 
         }

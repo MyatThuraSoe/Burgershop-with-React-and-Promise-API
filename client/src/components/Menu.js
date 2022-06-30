@@ -5,7 +5,7 @@ import { itemList } from './MenuItemList.js';
 export function Menu(){
 
     return(
-        <div className="menu"  id='menuPage'>
+        <div className="menu" id='menuPage' name='menuPage'>
            <h3 className="menu-heading">"Special Menu"</h3>
             <div className="menuListContainer">
                 {itemList.map((item)=>{

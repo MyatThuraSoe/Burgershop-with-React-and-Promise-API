@@ -11,14 +11,14 @@ export const itemList = [
         name: "Beef Sandwich Burger",
         img: "beefSandwichBurger.png",
         price: '5.5',
-        details: "Resist the urge to pile on any of the usual toppings—lettuce, tomato, ketchup."
+        details: "Rich beef steak flavour"
     },
     {
         id: 4,
         name: "Burger + Fries",
         img: "burgerPlusFries.jpg",
         price: '3',
-        details: "These juicy mini cheeseburgers are delicious served with delectable sweet potato fries."
+        details: "These juicy mini cheeseburgers are served with delectable sweet potato fries."
     },
     {
         id: 5,
@@ -32,7 +32,7 @@ export const itemList = [
         name: "One Set",
         img: "oneBurgerSet.jpg",
         price: '4',
-        details: "The delicious flavors of a caprese salad—basil, tomato and mozzarella—are captured in these juicy burgers."
+        details: "Flavors of a caprese salad-basil, tomato and mozzarella are captured in these juicy burgers."
     },
     
     {
@@ -40,21 +40,21 @@ export const itemList = [
         name: "Jet Black Burger",
         img: "jetblackburger.jpg",
         price: '3.5',
-        details: "This smoky patty melt features smoked Gouda cheese, hot sauce-spiked onions and sweet homemade barbecue sauce."
+        details: "Smoky patty melt features smoked Gouda cheese, hot sauce-spiked onions."
     },  
     {
         id: 3,
         name: "Burger Charming",
         img: "burgerCharming.jpg",
         price: '2.5',
-        details: "The one topped with nacho cheese sauce, salsa and tortilla chips."
+        details: "Topped with nacho cheese sauce, salsa and tortilla chips."
     },
     {
         id: 6,
         name: "Fresh Burger",
         img: "freshBurger.jpg",
         price: '3',
-        details: "Also called stree free burger. The best burger you may miss if you don't eat."
+        details: "Also called stress free burger."
     },
     {
         id: 9,
@@ -75,13 +75,13 @@ export const itemList = [
         name: "Beef Hotdog",
         img: "beefSandwich.jpg",
         price: '4.5',
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        details: "Lorem ipsum dolor sit amet, consectetur adgna aliqua."
     }, 
     {
         id: 7,
         name: "Fries",
         img: "fries.jpg",
         price: '1.5',
-        details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        details: "Lorem ipsum dolor sit amet, consebore et dolore magna aliqua."
     }
 ];

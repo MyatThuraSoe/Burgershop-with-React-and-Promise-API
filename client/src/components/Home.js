@@ -1,5 +1,6 @@
 import React from "react";
 import Homeburger from '../assets/img/homeburger.png';
+import { HashLink as Link } from 'react-router-hash-link';
 export function Home(){
     return(
         <div id='home' className="home">
@@ -22,7 +23,7 @@ export function Home(){
             <div className="home-text-container">
                 <span id="home-text-big">It's Burger O'clock</span><br/>
                 <span id="home-text-normal">Shouldn't miss it.</span><br/>
-                <button>Let's taste</button>
+                <button><Link to="#menuPage">Let's taste</Link></button>
             </div>
             
         </div>

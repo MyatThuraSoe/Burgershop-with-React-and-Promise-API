@@ -8,6 +8,9 @@ import { itemList } from './MenuItemList.js';
 import { OrderItem } from './orderItem.js';
 import { reducer } from './reducer.js';
 import axios from 'axios';
+
+
+import * as yup from 'yup';
 const newItemList = itemList.map((item)=>
     (
         {
@@ -37,10 +40,31 @@ export function Order() {
     const [state,dispatch] = useReducer(reducer,shopState);
     const [showCart, setShowCart] = React.useState(false);
     const navigate = useNavigate();
+    async function checkInputs(){
+        let validator;
+        let schema = yup.object().shape({
+                name: yup.string().required('Required'),
+                phone: yup.string().required().matches(/^[0-9]+$/, "Must be only digits").min(8, 'Minimum 8 digits').max(11, 'Maximum 11 digits'),
+                email: yup.string().required().email(),
+                address: yup.string().required()
+            });
+        await schema
+                .isValid({
+                    name: state.customerDetails.customerName,
+                    phone: state.customerDetails.customerPhone,
+                    email: state.customerDetails.customerEmail,
+                    address: state.customerDetails.customerAddress
+                }).then(function (valid) {
+                    console.log('input validation is ',valid);
+                    validator = valid;
+                });
+                console.log('validator is ', validator);
+        return validator;
+    }
     function postOrder(){
         var answer = window.confirm("Order Now?");
         if (answer) {
-            axios.post(`http://localhost:5000/order`,{
+            axios.post(`https://glorytaste.herokuapp.com/order`,{
             data:{
                 name: state.customerDetails.customerName,
                 phone: state.customerDetails.customerPhone,
@@ -185,7 +209,15 @@ export function Order() {
                                 }}/>
                             </div>
                             <div className="submitOrder">
-                                <button type="submit" onClick={()=>postOrder()}>Order Now</button>
+                                <button type="submit" onClick={async ()=>{
+                                    let check = await checkInputs();
+                                    if (check){
+                                        postOrder();
+                                    }else{
+                                        alert('please enter only valid inputs');
+                                    }
+                                }
+                                }>Order Now</button>
                             </div>
                         </div>
 
