@@ -2,7 +2,7 @@
 var ejs = require("ejs");
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
-const { convert } = require('html-to-text');
+
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLEINT_SECRET = process.env.CLEINT_SECRET;
@@ -41,7 +41,6 @@ exports.sendEmail = (customerEmail, name, phone, address, cart, totalCost)=>{
                   totalCost: totalCost },
                   function (err,str){
                     htmlstr = str;
-                    console.log(str);
                   });
         const mailOptions = {
           from: '"Glory Taste" glorytaste.shop@gmail.com',
@@ -59,6 +58,5 @@ exports.sendEmail = (customerEmail, name, phone, address, cart, totalCost)=>{
   }
 
   sendMail()
-    .then((result) => console.log('Email sent...', result))
     .catch((error) => console.log(error.message));
 }
