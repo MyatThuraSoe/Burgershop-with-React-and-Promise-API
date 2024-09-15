@@ -39,12 +39,6 @@ var feedback = new mongoose.Schema({
 })
 const feedbackdb = mongoose.model('feedback', feedback);
 
-module.exports = {
-    sessiondb,
-    orderdb,
-    feedbackdb
-};
-
 
 
 // Define the schema for the menu
