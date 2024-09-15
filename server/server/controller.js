@@ -121,3 +121,17 @@ exports.getAllSessions = (req, res) => {
       res.status(500).send({ message: "Error retrieving sessions" });
     });
 };
+
+
+// Menu
+exports.getMenu = (req, res) => {
+  Menu.find()
+    .then((menuItems) => {
+      res.json(menuItems);
+      res.status(200).end();
+    })
+    .catch((err) => {
+      console.log(err, " while retrieving menu items");
+      res.status(500).send({ message: "Error retrieving menu items" });
+    });
+};

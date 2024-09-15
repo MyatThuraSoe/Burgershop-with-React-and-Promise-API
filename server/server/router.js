@@ -3,6 +3,9 @@ const route = express.Router();
 
 const controller = require("./controller");
 
+// API for MenuItems
+route.get("/menu", controller.getMenu)
+
 // API
 route.get("/session", controller.getSession);
 route.post("/order", controller.postOrder);

@@ -45,3 +45,34 @@ module.exports = {
     feedbackdb
 };
 
+
+
+// Define the schema for the menu
+var menuSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    img: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: String, // You can also use Number if price should be a numeric value
+        required: true
+    },
+    details: {
+        type: String,
+        required: true
+    }
+});
+
+// Create the model for the menu collection
+const menudb = mongoose.model('menu', menuSchema);
+
+module.exports = {
+    sessiondb,
+    orderdb,
+    feedbackdb,
+    menudb
+};
