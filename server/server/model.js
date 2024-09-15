@@ -49,11 +49,8 @@ var menuSchema = new mongoose.Schema({
     price: String,
     details: String
 });
-
-
 // Create the model for the menu collection
-const menudb = mongoose.model('menu', menuSchema);
-
+const menudb = mongoose.model('menu', menuSchema, 'menu');
 module.exports = {
     sessiondb,
     orderdb,
