@@ -2,6 +2,7 @@ var model = require("./model");
 var Order = model.orderdb;
 var Feedback = model.feedbackdb;
 var Session = model.sessiondb;
+var Menu = model.menudb;
 var sendmail = require("./sendemail");
 const url = require("url");
 exports.getSession = (req, res) => {

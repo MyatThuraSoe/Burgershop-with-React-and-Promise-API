@@ -41,25 +41,15 @@ const feedbackdb = mongoose.model('feedback', feedback);
 
 
 
-// Define the schema for the menu
+
+// menu
 var menuSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
-    img: {
-        type: String,
-        required: true
-    },
-    price: {
-        type: String, // You can also use Number if price should be a numeric value
-        required: true
-    },
-    details: {
-        type: String,
-        required: true
-    }
+    name: String,
+    img: String,
+    price: String,
+    details: String
 });
+
 
 // Create the model for the menu collection
 const menudb = mongoose.model('menu', menuSchema);
