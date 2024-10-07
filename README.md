@@ -3,5 +3,4 @@ Burgershop app with MERN Stack, Oauth2, ( Customer ordering app using React Hook
 
 https://glorytaste.netlify.app/
 
-
-![screencapture-glorytaste-netlify-app-2024-10-07-15_01_50](https://github.com/user-attachments/assets/4e6a0c4f-8061-4fab-b3c8-5c53d702597a)
+![screencapture-glorytaste-netlify-app-2024-10-07-15_06_42](https://github.com/user-attachments/assets/27d9a41d-01b8-4aee-b58d-a218f206d465)
